@@ -1,0 +1,19 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+@media ( min-width: 768px ) {
+    body{
+        background: blue;
+    }
+}
+@media ( min-width: 1024px ) {
+    html{
+        background: green;
+    }
+}
