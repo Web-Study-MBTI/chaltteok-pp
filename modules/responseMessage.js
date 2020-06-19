@@ -35,6 +35,9 @@ module.exports = {
     //db오류
     DB_ERROR: "DB 오류",
     //작성자오류
-    MISS_MATCH_IDX: "본인이 쓴 글이 아닙니다."
+    MISS_MATCH_IDX: "본인이 쓴 글이 아닙니다.",
+
+    // 결과 조회 성공
+    READ_RESULT_SUCCESS: "결과 조회 성공"
 
 };

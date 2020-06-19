@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const inputControllers = require('../controllers/inputControllers');
+const resultController = require('../controllers/resultController');
 
 router.post('/survey1', inputControllers.answer1);
 /* GET home page. */
@@ -18,9 +19,8 @@ router.get("/survey4", (req, res, next)=> {
   res.render("survey4");
 });
 
-router.get("/result",(req,res,next) => {
-  res.render("result")
-})
+router.get("/detail/:type_idx", resultController.readDetail);
+router.get("/result/:type_idx", resultController.readResult);
 
 router.get("/diff_type",(req,res,next) => {
   res.render("diff_type")

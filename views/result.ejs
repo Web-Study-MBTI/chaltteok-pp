@@ -17,53 +17,89 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<%
+    /*메인 타입 이미지*/
+    var type_img = data.type_img;
 
-    <div class="resultChar">
-        <img class= "resultImg" src="https://post-phinf.pstatic.net/MjAxOTA1MDhfMjM0/MDAxNTU3Mjg3MDcxODg5.T2RxN-e_PT1j5xBCaPNvDEjE_efe9mrVjGO2t4Hl624g.MBwsmf5jUaW4yP4B_zg8CZQUdiSh66DAEi_aZ7Miw9Ag.PNG/image_7075135011557287055533.png?type=w1200">
+    /*키워드*/
+    var keyword1 = data.type_keyword1;
+    var keyword2 = data.type_keyword2;
+    var keyword3 = data.type_keyword3;
+    var keyword4 = data.type_keyword4;
+    var keyword5 = data.type_keyword5;
+
+    /*특징*/
+    var type_info1 = data.type_info1;
+    var type_info2 = data.type_info2;
+    var type_info3 = data.type_info3;
+    var type_info4 = data.type_info4;
+    var type_info5 = data.type_info5;
+
+    /*대표적인 인물*/
+    var type_leader = data.type_leader;
+
+    /*선호하는 업무환경*/
+    var type_env1 = data.type_env1;
+    var type_env2 = data.type_env2;
+    var type_env3 = data.type_env3;
+
+    /*적합한 포지션*/
+    var type_position = data.type_position;
+
+    /*앱잼내의 포지션*/
+    var type_app = data.type_app;
+%>
+
+<body>
+    <div class="navbar_logo">
+        <div class="logo" style="font-weight: bold; font-size: 20px;">찰떡피플</div>
+        <a class="navbar_info" href="./diff_type">6개 협업 유형 보러가기</a>
     </div>
 
-
+    <div class="resultChar">
+        <img class= "resultImg" src= "<%= type_img%>" >
+    </div>
 
     <div class="totalBorder">
     <div class = "resultExplanation">
         <p>
         <div class = "title" style="padding-top: 0px;">  키워드 </div>
             <div style="display: flex;  justify-content: space-between;">
-                <div class="keyword"> 성장지향적</div>
-                <div class="keyword"> 심사숙고</div>
-                <div class="keyword"> 더 나은 세상</div>
-                <div class="keyword"> 자아실현의 욕구</div>
-                <div class="keyword"> 잠재력 개발</div>
+                <div class="keyword"> <%= keyword1 %> </div>
+                <div class="keyword"> <%= keyword2 %> </div>
+                <div class="keyword"> <%= keyword3 %> </div>
+                <div class="keyword"> <%= keyword4 %> </div>
+                <div class="keyword"> <%= keyword5 %> </div>
             </div>
         </p>
+
+
         <p>
         <div class = "title">  특징 </div>
-        <ul><li> 인간에 대한 따스한 감성리더십으로, 팀원들로부터 최상의 능력을 끌어내고, 갈등을 해소하고 협력하도록 도와요.</li>
-            <li> 풍부한 상상력을 기반으로 다양힌 아이디어를 내놓는 ‘아이디어 뱅크’  </li>
-            <li> 의사소통에 능해서 긍정적인 변화를 가져오는 촉매자 역할을 해요.</li>
-            <li> 의미, 가치 부여를 중요하게 생각하기 때문에 본인이 하고 있는 일에 대해 단순한 일 이상의 가치를 부여하기도 해요. </li>
-            <li> 갈등, 소외 등의 문제를 타 유형보다 더 불편하게 생각해요.</li>   </ul>
+        <ul><li> <%= type_info1 %> </li>
+            <li> <%= type_info2 %> </li>
+            <li> <%= type_info3 %> </li>
+            <li> <%= type_info4 %> </li>
+            <li> <%= type_info5 %> </li> </ul>
         </p>
         <p>
         <div class = "title">  대표적인 인물 </div>
-        <div> 팀쿡, 야후의 창업자 제리양 </div>
+        <div> <%= type_leader %> </div>
         </p>
         <p>
         <div class = "title">  선호하는 업무환경 </div>
-        <ul><li> 성장과 복지를 중요하게 여기는 곳쿡, 야후의 창업자 제리양</li>
-            <li> 창의적인 아이디어가 수용되는 곳</li>
-            <li> 조화롭고 배려하는 분위기</li>   </ul>
+        <ul><li> <%= type_env1 %> </li>
+            <li> <%= type_env2 %> </li>
+            <li> <%= type_env3 %> </li>   </ul>
         </p>
 
         <p>
         <div class = "title">  적합한 포지션 </div>
-        <div> 기획자</div>
+        <div> <%= type_position %> </div>
         </p>
         <p>
         <div class = "title">  앱잼내의 포지션</div>
-        <div> 앱잼 내의 ‘엄마’ <br>
-              따스한 마음을 가진 당신에게 많은 이들이 마음을 의지하고 있을 지 몰라요 >< <br>  </div>
+        <div > <%= type_app %> </div>
         </p>
     </div>
 
