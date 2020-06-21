@@ -2,6 +2,6 @@ var express = require('express');
 var router = express.Router();
 const inputControllers = require('../controllers/inputControllers');
 
-router.get('/', inputControllers.answer1);
+router.post('/', inputControllers.answer4);
 
 module.exports = router;
