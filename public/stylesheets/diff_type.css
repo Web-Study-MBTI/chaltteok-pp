@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     padding-bottom: 10px;
+    float: center;
 }
 
 .card-tag{
@@ -30,17 +31,68 @@
     color: #000000;
     white-space: nowrap;
     padding: 3px;
-    margin-right: 10px;
+    margin: auto;
 }
 
 .add{
-    width: 107px;
-  height: 37px;
-  object-fit: contain;
-  padding-left: 60%;
+    width:107px;
+    height:35px;
+    float: right;
 }
 
+.card-img-top{
+    object-fit: contain;
+}
 @media ( min-width: 768px ) {
+    .col-sm-4{
+        width: 254px;
+        height: 361px;
+        border-radius: 4px;
+        border: solid 1px #707070;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+    }
+    
+    .card-box{
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+        float: center;
+    }
+    
+    .card-tag{
+        width: auto;
+        height: auto;
+        border-radius: 4px;
+        border: solid 2px #3673e5;
+        background-color: #f5f4f4;
+        font-family: NotoSans;
+        font-size: 12px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.42;
+        letter-spacing: normal;
+        color: #000000;
+        white-space: nowrap;
+        padding: 3px;
+        margin: auto;
+    }
+    
+    .add{
+        width:157px;
+        height:55px;
+        float: right;
+    }
+
+    .card-img-top{
+        object-fit: contain;
+    }
+    
+}
+
+@media ( min-width: 1024px ) {
     .col-sm-4{
         width: 254px;
         height: 361px;
@@ -73,14 +125,17 @@
         color: #000000;
         white-space: nowrap;
         padding: 3px;
-        margin-right: 10px;
+        margin: auto;
     }
     
     .add{
-        width: 107px;
-      height: 37px;
-      object-fit: contain;
-      padding-left: 65%;
+        width:117px;
+        height:45px;
+        float: right;
     }
-    
+
+    .card-img-top{
+        object-fit: contain;
+    }
+
 }
