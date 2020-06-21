@@ -117,12 +117,13 @@ const input = {
             //return type;
             if(type){
                 const fields2 = 'type_idx=?';
-                const query2 = `UPDATE ${table2} SET ${fields2} WHERE user_idx="${user_idx}"`;
-                const values2 = [type];
-                const result = await pool.queryParamArr(query2,values2);
-            return true;
+                const query = `UPDATE ${table2} SET ${fields2} WHERE user_idx="${user_idx}"`;
+                const values = [type];
         
-            }}catch (err) {
+                    const result2 = await pool.queryParamArr(query,values);
+                    return true;
+            }}
+       catch (err) {
             console.log('input answer4 error: ', err);
             throw err;
         }}
