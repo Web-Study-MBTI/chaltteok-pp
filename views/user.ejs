@@ -21,20 +21,19 @@
             <div class="logo" style="font-weight: bold; font-size: 20px;">찰떡피플</div>
             <a class="navbar_info" href="./diff_type">6개 협업 유형 보러가기</a>
         </div>
+        <div class="bglogin">
             <div class="login">
-            <form action="/user" method="post" style="text-align: center; padding:25%">
-                <!-- <fieldset> -->
-                  <input type="text" name="user_name">
-                  <br><br><br>
-                  <input type="text" name="user_part">
+            <form action="/user" method="post">                  
+                 <input type="text" name="user_part" id="user_part" placeholder="ex) server">
                   <br><br><br><br>
-                  <button class="loginbtn" type="submit"></button>
-                  <!-- onclick="location.href='./survey1'" -->
-   <!-- </fieldset> -->
+                  <input type="text" name="user_name" id="user_name" placeholder="nickname">
+                  <br><br><br>
+
+                  <button class="loginbtn" type="submit">테스트를 시작해볼까요?</button>
 </div>
    </form>
         </div>
-        <div class="bglogin"></div>
+    </div>
     </body>
     <script src="js/user1.js"></script>
 </html>
