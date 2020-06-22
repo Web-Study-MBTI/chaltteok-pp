@@ -121,7 +121,7 @@ const input = {
                 const values = [type];
         
                     const result2 = await pool.queryParamArr(query,values);
-                    return true;
+                    return type;
             }}
        catch (err) {
             console.log('input answer4 error: ', err);

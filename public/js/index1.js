@@ -6,11 +6,7 @@ $(".rb-tab").click(function () {
   $(this).addClass("rb-tab-active");
 });
 
-// if ($(".rb-tab").data.length != 7){
-//   $('.trigger').prop('disabled', true);
-// } else {
-//   $('.trigger').prop('disabled', false);
-// } 
+
 //버튼 비활성화 시켜주고 싶은데 ,, 설문조사 개수에 따라?! 7개 미만으로 체크하면 버튼 비활성화
 
 const user_name=localStorage.getItem('result');
@@ -23,6 +19,12 @@ $(".trigger").click(function () {
  var num5=$("#rb-5").find(".rb-tab-active").attr("data-value");
  var num6=$("#rb-6").find(".rb-tab-active").attr("data-value");
  var num7=$("#rb-7").find(".rb-tab-active").attr("data-value");
+
+//  if ($(".rb-tab").data.length != 7){
+//   $('.trigger').prop('disabled', true);
+// } else {
+//   $('.trigger').prop('disabled', false);
+// } 
 
  if(num1===undefined){
    num1=0;
