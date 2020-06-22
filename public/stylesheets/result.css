@@ -139,7 +139,7 @@
     }
 
     .matchTypeRight {
-        padding: 20px 15px 10px 15px;
+        padding: 20px 15px 10px 0px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -158,23 +158,11 @@
         color: #000000;
     }
 
-    .matchTypeName {
-        font-size: 14px;
-    }
 
-    .partName{
-        font-family: NotoSans;
-        font-size: 20px;
-        font-weight: 600;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.35;
-        letter-spacing: normal;
-        text-align: left;
-        color: #3673e5;
-    }
-
-    .nickName{
+    .matchTypeName{
+        margin-top: 20px;
+        width: auto;
+        height: 100%;
         font-family: NotoSans;
         font-size: 20px;
         font-weight: normal;
@@ -186,9 +174,46 @@
         color: #000000;
     }
 
-    .matchTypeNameNext {
-        padding-top: 15px;
+    .matchTypeBtnGroup{
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
+
+    .matchBtn{
+        border: none;
+        background-color: transparent;
+        width: 8px;
+        height: 18px;
+    }
+
+    .partName{
+        padding-right: 13px;
+        font-family: NotoSans;
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3673e5;
+    }
+
+    .nickName{
+        font-family: NotoSans;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+    }
+
 
     .share {
         padding: 30px 10px 10px 10px;
@@ -219,7 +244,7 @@
     .sns {
         width: 40px;
         height: 40px;
-        border-radius: 10px;
+        border-radius: 40px;
     }
 
     .btnAlign {
@@ -432,7 +457,7 @@
     }
 
     .matchTypeRight{
-        padding: 50px 30px 30px 30px;
+        padding: 50px 10px 30px 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -452,10 +477,49 @@
         color: #000000;
     }
 
-    .matchTypeName{
-        padding: 24px 44px 0px 24px;
+    .matchTypeBtnGroup{
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .matchBtn{
+        border: none;
+        background-color: transparent;
+        width: 30px;
+        height: 50px;
+    }
+
+    .matchTypeName{
+        padding: 20px 44px 0px 20px;
+        width: auto;
         height: 100%;
+        font-family: NotoSans;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+    }
+
+    .partName{
+        padding-right: 18px;
+        font-family: NotoSans;
+        font-size: 20px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3673e5;
+    }
+
+    .nickName{
         font-family: NotoSans;
         font-size: 20px;
         font-weight: normal;
