@@ -10,7 +10,6 @@
 
     .resultImg {
         width: 100%;
-        height: 100%;
     }
 
     .totalBorder{
@@ -109,6 +108,8 @@
     }
 
     .col-sm-6 {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
         border-radius: 4px;
         box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.16);
         border: solid 1px rgba(54, 115, 229, 0.5);
@@ -139,7 +140,7 @@
     }
 
     .matchTypeRight {
-        padding: 20px 15px 10px 15px;
+        padding: 20px 15px 10px 0px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -158,23 +159,11 @@
         color: #000000;
     }
 
-    .matchTypeName {
-        font-size: 14px;
-    }
 
-    .partName{
-        font-family: NotoSans;
-        font-size: 20px;
-        font-weight: 600;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.35;
-        letter-spacing: normal;
-        text-align: left;
-        color: #3673e5;
-    }
-
-    .nickName{
+    .matchTypeName{
+        margin-top: 20px;
+        width: auto;
+        height: 100%;
         font-family: NotoSans;
         font-size: 20px;
         font-weight: normal;
@@ -186,16 +175,53 @@
         color: #000000;
     }
 
-    .matchTypeNameNext {
-        padding-top: 15px;
+    .matchTypeBtnGroup{
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
+
+    .matchBtn{
+        border: none;
+        background-color: transparent;
+        width: 8px;
+        height: 18px;
+    }
+
+    .partName{
+        padding-right: 13px;
+        font-family: NotoSans;
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3673e5;
+    }
+
+    .nickName{
+        font-family: NotoSans;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+    }
+
 
     .share {
         padding: 30px 10px 10px 10px;
     }
 
     .shareText {
-        width: 200px;
+        width: 150px;
         height: 30px;
         font-family: Cafe24Ohsquare;
         font-size: 20px;
@@ -209,7 +235,7 @@
     }
 
     .snsGroup {
-        width: 150px;
+        width: 100px;
         height: 50px;
         display: flex;
         justify-content: space-between;
@@ -219,7 +245,7 @@
     .sns {
         width: 40px;
         height: 40px;
-        border-radius: 10px;
+        border-radius: 40px;
     }
 
     .btnAlign {
@@ -266,21 +292,51 @@
         font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
     }
 
+    .navbar_logo {
+        width:100%;
+        height:100px;
+        padding:100px 0px 80px 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo{
+        padding: 20px 20px 20px 20px;
+        width: 15%;
+    }
+
+    .navbar_info{
+        width:100%;
+        height:27px;
+        padding:40px 0px 40px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: NotoSans;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: left;
+        color: #707070;
+    }
+
     .resultChar{
-        width: 1024px;
-        height: 350px;
+        width: 100%;
     }
 
     .resultImg{
         width: 100%;
-        height: 350px;
     }
 
     .totalBorder{
         margin-left: 71px;
         margin-right: 71px;
         padding-bottom: 64px;
-        width: 848px;
+        width: auto;
         height: auto;
         object-fit: contain;
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -370,6 +426,8 @@
     }
 
     .col-sm-6{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
         border-radius: 4px;
         box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.16);
         border: solid 2px rgba(54, 115, 229, 0.5);
@@ -400,7 +458,7 @@
     }
 
     .matchTypeRight{
-        padding: 50px 30px 30px 30px;
+        padding: 50px 10px 30px 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -420,10 +478,49 @@
         color: #000000;
     }
 
-    .matchTypeName{
-        padding: 24px 44px 0px 24px;
+    .matchTypeBtnGroup{
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .matchBtn{
+        border: none;
+        background-color: transparent;
+        width: 30px;
+        height: 50px;
+    }
+
+    .matchTypeName{
+        padding: 20px 44px 0px 20px;
+        width: auto;
         height: 100%;
+        font-family: NotoSans;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+    }
+
+    .partName{
+        padding-right: 18px;
+        font-family: NotoSans;
+        font-size: 20px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3673e5;
+    }
+
+    .nickName{
         font-family: NotoSans;
         font-size: 20px;
         font-weight: normal;
@@ -444,7 +541,7 @@
     }
 
     .shareText{
-        width: 260px;
+        width: 200px;
         height: auto;
         font-family: Cafe24Ohsquare;
         font-size: 28px;
@@ -458,7 +555,8 @@
     }
 
     .snsGroup{
-        width: 260px;
+        padding-top: 20px;
+        width: 160px;
         height: 80px;
         display: flex;
         justify-content: space-between;
@@ -479,7 +577,7 @@
     }
 
     .typeBtn{
-        margin-bottom: 258px;
+        margin-bottom: 100px;
         width: 273px;
         height: 64px;
         border-radius: 60px;
