@@ -11,6 +11,17 @@ const type = {
             console.log('ERROR : ', err);
             throw err;
         }
+    },
+
+    matchPeople : async (type_idx) => {
+        const query = `SELECT user_name, user_part FROM user WHERE type_idx = ${type_idx}`;
+        try {
+            const result = await pool.queryParam(query);
+            return result;
+        } catch (err) {
+            console.log('ERROR : ', err);
+            throw err;
+        }
     }
 }
 
