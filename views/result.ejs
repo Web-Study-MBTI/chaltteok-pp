@@ -48,6 +48,9 @@
 
     /*앱잼내의 포지션*/
     var type_app = data.type_app;
+
+    /*나랑 잘맞는 유형 이미지*/
+    var type_match_img = data.type_match_img;
 %>
 
 <body>
@@ -109,7 +112,7 @@
         </div>
         <div class="row">
             <div class="col-sm-6" >
-                <img class ="matchTypeImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRRKpfrgePQUpZ6NMrdTRfaty_27vCOHDwJYDda2UfZwne6eiim&usqp=CAU">
+                <img class ="matchTypeImg" src="<%= type_match_img %>">
             </div>
             <div class="col-sm-6">
                 <div class ="matchTypeRight">
@@ -144,18 +147,17 @@
 
     <div class="share">
         <div class = "shareText">
-            내 협업 유형 공유하기
+            테스트 공유하기
         </div>
         <div class = "snsGroup">
 
             <a href="javascript:;" id="kakao-link-btn">
                     <!-- 버튼이 생기는 부분, id는 맘대로 쓰시되 아래 js 코드도 동일하게 적용해주셔야 합니다. -->
-                    <img class="sns" src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FSq4OD%2Fbtqzlkr13eD%2FdYwFnscXEA6YIOHckdPDDk%2Fimg.jpg" />
+                    <img class="sns" src="../images/btn-share-cacaotalk.png" />
              <!-- 톡 이미지 부분이고, 전 kakaolink_btn_small.png로 불러왔습니다.   -->
             </a>
+            <img class="sns" src="../images/btn-share-link.png">
 
-            <img class="sns" src="https://cdn.pixabay.com/photo/2017/08/20/10/30/facebook-2661207_960_720.jpg">
-            <img class="sns" src="https://t1.daumcdn.net/cfile/tistory/99B6AB485D09F2132A">
         </div>
     </div>
     </div>
