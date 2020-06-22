@@ -6,6 +6,10 @@
     align-items: center;
     justify-content: space-between;
 }
+@font-face {
+  font-family: NotoSans;
+  src:url("../fonts/NotoSansRegular.ttf") format('truetype');
+}
 
 .navbar_info{
   width:100%;
@@ -39,7 +43,7 @@ body {
     width: 100%;
     /* padding: 150px 20px 0px 20px; */
     /* display: flex; */
-    padding-top:20px;
+    /* padding-top:20px; */
     justify-content: space-between;
     align-items: center;
     padding-left: 35px;
@@ -47,7 +51,7 @@ body {
 }
 .survey{
     width: 100%;
-    padding: 50px 0;
+    padding: 0 0 50px 0;
 }
 .question{
     width: 100%;
@@ -55,6 +59,7 @@ body {
     justify-content: center;
     align-items: center;
     padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 20px;
     padding-top: 20px;
     margin-top: 30px;
@@ -200,84 +205,9 @@ body {
   border: solid 4px #e07171;
   padding: 5px;
 }
-  /* .rb-spot1 {
-    position: absolute;
-    width:30px;
-    height: 30px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: transparent;
-    border-radius: 100%;
-    cursor: pointer;
-    transition: ease .5s;
-    border: solid 4px #3673e5;
-    background-color: #ffffff;
-  } */
-
-  /* .rb-spot2 {
-    position: absolute;
-    width: 23px;
-    height: 23px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: transparent;
-    border-radius: 100%;
-    cursor: pointer;
-    transition: ease .5s;
-    border: solid 4px #3673e5;
-    background-color: #ffffff;
-  } */
   
-  /* .rb-spot3 {
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: transparent;
-    border-radius: 100%;
-    cursor: pointer;
-    transition: ease .5s;
-    border: solid 4px #707070;
-    background-color: #ffffff;
-  } */
-  /* .rb-spot4 {
-    position: absolute;
-    width: 23px;
-    height: 23px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: transparent;
-    border-radius: 100%;
-    cursor: pointer;
-    transition: ease .5s;
-    border: solid 4px #e07171;
-    background-color: #ffffff;
-  } */
-
-  /* .rb-spot5 {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: transparent;
-    border-radius: 100%;
-    cursor: pointer;
-    transition: ease .5s;
-    border: solid 4px #e07171;
-    background-color: #ffffff;
-    padding: 5px;
-  } */
-
 .item-pop{
     width: 100%;
-    height: 200px;
 }
 
 .btn1{
@@ -312,6 +242,11 @@ body {
     display: flex; 
     align-items: center;
     justify-content: space-between;
+}
+
+@font-face {
+  font-family: NotoSans;
+  src:url("../fonts/NotoSansRegular.ttf") format('truetype');
 }
 
 body {
@@ -349,7 +284,7 @@ body {
     width: 100%;
     /* padding: 150px 20px 0px 20px; */
     /* display: flex; */
-    padding-top:20px;
+    /* padding-top:20px; */
     justify-content: space-between;
     align-items: center;
     padding-left: 35px;
@@ -357,14 +292,15 @@ body {
 }
 .survey{
     width: 100%;
-    padding: 50px 0;
+    padding: 0 0 50px 0;
 }
 .question{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 50px;
     padding-top: 20px;
     margin-top: 30px;
@@ -534,7 +470,6 @@ body {
 
 .item-pop{
     width: 100%;
-    height: 200px;
 }
 
 .btn1{
@@ -569,7 +504,10 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
+@font-face {
+  font-family: NotoSans;
+  src:url("../fonts/NotoSansRegular.ttf") format('truetype');
+}
 body {
     font-family: sans-serif;
   }
@@ -605,7 +543,7 @@ body {
     width: 100%;
     /* padding: 150px 20px 0px 20px; */
     /* display: flex; */
-    padding-top:20px;
+    /* padding-top:20px; */
     justify-content: space-between;
     align-items: center;
     padding-left: 35px;
@@ -613,20 +551,21 @@ body {
 }
 .survey{
     width: 100%;
-    padding: 50px 0;
+    padding: 0 0 50px 0;
 }
 .question{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 50px;
     padding-top: 20px;
     margin-top: 30px;
     height: 32px;
     font-family: NotoSans;
-    font-size: 23px;
+    font-size: 22px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -788,7 +727,6 @@ body {
 
 .item-pop{
     width: 100%;
-    height: 200px;
 }
 
 .btn1{
@@ -823,6 +761,10 @@ body {
     display: flex; 
     align-items: center;
     justify-content: space-between;
+}
+@font-face {
+  font-family: NotoSans;
+  src:url("../fonts/NotoSansRegular.ttf") format('truetype');
 }
 
 .navbar_info{
@@ -859,7 +801,7 @@ body {
     width: 100%;
     /* padding: 150px 20px 0px 20px; */
     /* display: flex; */
-    padding-top:20px;
+    /* padding-top:20px; */
     justify-content: space-between;
     align-items: center;
     padding-left: 5px;
@@ -867,14 +809,15 @@ body {
 }
 .survey{
     width: 100%;
-    padding: 50px 0;
+    padding: 0 0 50px 0;
 }
 .question{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 50px;
     padding-top: 20px;
     margin-top: 30px;
@@ -1045,7 +988,6 @@ body {
 
 .item-pop{
     width: 100%;
-    height: 200px;
 }
 
 .btn1{
