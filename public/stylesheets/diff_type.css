@@ -8,6 +8,12 @@
     align-items: center;
 }
 
+.logo{
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
 @font-face {
     font-family: NotoSans;
     src:url("../fonts/NotoSansRegular.ttf") format('truetype');
@@ -49,6 +55,11 @@
 }
 
 @media ( min-width: 768px ) {
+    .logo{
+        width: auto;
+        height: auto;
+    }
+
     .col-sm-4{
         width: 254px;
         height: 361px;
@@ -102,6 +113,11 @@
 }
 
 @media ( min-width: 1024px ) {
+    .logo{
+        width: auto;
+        height: auto;
+    }
+
     .col-sm-4{
         width: 254px;
         height: 361px;
@@ -156,6 +172,10 @@
 }
 
 @media ( max-width: 374px ) {
+    .logo{
+        width: auto;
+        height: auto;
+    }
     .col-sm-4{
         width: 254px;
         height: 361px;
