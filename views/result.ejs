@@ -56,8 +56,8 @@
 
 <body>
     <div class="navbar_logo">
-        <div class="logo" style="font-weight: bold; font-size: 20px;">찰떡피플</div>
-        <a class="navbar_info" href="./diff_type">6개 협업 유형 보러가기</a>
+        <div style="font-weight: bold; font-size: 20px;" > <img class="logo" src="../images/img-logo@3x.png "> </div>
+        <a class="navbar_info" href="../diff_type">6개 협업 유형 보러가기</a>
     </div>
 
     <div class="resultChar">
@@ -134,15 +134,18 @@
                                     i++;
                                     if(i > len) i = 1;
                                 }
-                                alert((i-1)*5);
-                                for(var k=0, j = (i-1)*5; k < 5 ;j++, k++) {
-                                    if(j >= matchPP_len) {
+
+                                var matchPP = '<%-JSON.stringify(matchPP)%>';
+                                matchPP = JSON.parse(matchPP);
+
+                                for(var k=0 , j = (i-1)*5; k < 5 ;j++, k++) {
+                                    if(j  >= matchPP_len) {
                                         document.getElementById("pN"+k).innerHTML = "";
                                         document.getElementById("nN"+k).innerHTML = "";
                                     }
                                     else{
-                                        document.getElementById("pN"+k).innerHTML = "part";
-                                        document.getElementById("nN"+k).innerHTML = "name";
+                                        document.getElementById("pN"+k).innerHTML = matchPP[j].user_part;
+                                        document.getElementById("nN"+k).innerHTML = matchPP[j].user_name;
                                     }
                                 }
                             }
@@ -215,7 +218,7 @@
     </div>
 
     <div class ="btnAlign">
-        <button class = "typeBtn" onclick="location.href='https://localhost:3000/diff_type'">
+        <button class = "typeBtn" onclick="location.href='../diff_type'">
             다른 타입 구경하러 가기 </button>
     </div>
 
