@@ -91,7 +91,18 @@
     font-weight: 600;
  }
 
+ .logo{
+     width: auto;
+     height: auto;
+ }
+
 @media ( min-width: 768px ) {
+    .logo{
+        width: auto;
+        height: auto;
+    }
+
+    
     .bglogin{
         margin-bottom: 100px;
     }
@@ -154,6 +165,11 @@
 
 }
 @media ( min-width: 1024px ) {
+     .logo{
+     width: auto;
+     height: auto;
+ }
+
     .bglogin{
 
         margin-bottom: 100px;
@@ -277,5 +293,14 @@
         font-family: NotoSans;
         font-weight: 600;
      }
+
+     .logo{
+         width: auto;
+         height: auto;
+     }
+     .navbar_logo{
+         margin-top: 40px;
+     }
+
 
 }
