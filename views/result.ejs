@@ -51,7 +51,7 @@
 
     /*나랑 잘맞는 유형 이미지*/
     var type_match_img = data.type_match_img;
-    var type_medium_img = data.type_match_img;
+    var type_medium_img = data.type_medium_img;
 %>
 
 <body>
@@ -234,7 +234,6 @@
       content: { // 여기부터 실제 내용이 들어갑니다.
         title: '찰떡피플 : 협업 유형 테스트', // 본문 제목
         description: '내 협업 스타일, 그리고 나랑 일할 때 가장 찰떡인 사람들을 찰떡피플에서 찾아보세요!', // 본문 바로 아래 들어가는 영역?
-        //imageUrl: 'https://modoctest.s3.ap-northeast-2.amazonaws.com/export800px+(2).png', // 이미지
           imageUrl: '<%= type_medium_img%>',
         link: {
           mobileWebUrl: 'https://localhost:3000/result/1',
