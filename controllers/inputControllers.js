@@ -56,6 +56,6 @@ answer4 : async (req, res) => {
         return res.status(statusCode.DB_ERROR)
             .send(util.fail(statusCode.DB_ERROR, resMessage.DB_ERROR));
     }
-    return res.redirect('/result/'+idx);
+    res.render("result",idx); //여기안됨
 }
 }
