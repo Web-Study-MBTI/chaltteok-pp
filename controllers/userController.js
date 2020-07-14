@@ -12,15 +12,18 @@ signup : async (req, res) => {
     } = req.body;
     // request data 확인 - 없다면 Bad Request 반환
     if (!user_name || !user_part) {
-        res.status(statusCode.BAD_REQUEST)
-            .send(util.fail(statusCode.BAD_REQUEST, resMessage.NULL_VALUE));
+        // res.status(statusCode.BAD_REQUEST)
+        //     .send(util.fail(statusCode.BAD_REQUEST, resMessage.NULL_VALUE));
+        res.send('<script type="text/javascript">alert("파트(직업) 또는 닉네임을 입력해주세요.");location.href="./user";</script>');
         return;
     }
     //already ID
     const idx1 = await User.checkUser(user_name);
-    if (idx1===true) {
-        res.status(statusCode.BAD_REQUEST)
-            .send(util.fail(statusCode.BAD_REQUEST, resMessage.ALREADY_ID));
+    console.log(idx1+" : " + idx1[0])
+    if (idx1>0) {
+        // res.status(statusCode.BAD_REQUEST)
+        //     .send(util.fail(statusCode.BAD_REQUEST, resMessage.ALREADY_ID));
+        res.send('<script type="text/javascript">alert("이미 존재하는 닉네임입니다.");location.href="./user";</script>');
         return;
     }
     const idx = await User.signup(user_name,user_part);

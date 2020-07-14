@@ -51,11 +51,12 @@ answer4 : async (req, res) => {
     var user_idx = await User.checkUser(user_name);
     user_idx = user_idx.user_idx;
     console.log(user_idx);
+
     const idx = await Input.answer4(user_idx,num22,num23,num24,num25,num26,num27,num28);
     if (idx === -1) {
         return res.status(statusCode.DB_ERROR)
             .send(util.fail(statusCode.DB_ERROR, resMessage.DB_ERROR));
     }
-    return res.redirect('/result/'+ idx);
+    res.json({idx:idx})
 }
 }
