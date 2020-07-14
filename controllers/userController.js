@@ -14,7 +14,7 @@ signup : async (req, res) => {
     if (!user_name || !user_part) {
         // res.status(statusCode.BAD_REQUEST)
         //     .send(util.fail(statusCode.BAD_REQUEST, resMessage.NULL_VALUE));
-        res.send('<script type="text/javascript">alert("빈칸을 채워주세요~");location.href="./user";</script>');
+        res.send('<script type="text/javascript">alert("파트(직업) 또는 닉네임을 입력해주세요.");location.href="./user";</script>');
         return;
     }
     //already ID
@@ -23,7 +23,7 @@ signup : async (req, res) => {
     if (idx1>0) {
         // res.status(statusCode.BAD_REQUEST)
         //     .send(util.fail(statusCode.BAD_REQUEST, resMessage.ALREADY_ID));
-        res.send('<script type="text/javascript">alert("이미 존재하는 닉네임입니다~");location.href="./user";</script>');
+        res.send('<script type="text/javascript">alert("이미 존재하는 닉네임입니다.");location.href="./user";</script>');
         return;
     }
     const idx = await User.signup(user_name,user_part);
