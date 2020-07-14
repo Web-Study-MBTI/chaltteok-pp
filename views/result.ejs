@@ -183,11 +183,13 @@
         </div>
         <div class = "snsGroup">
 
-            <a href="javascript:;" id="kakao-link-btn">
-                    <!-- 버튼이 생기는 부분, id는 맘대로 쓰시되 아래 js 코드도 동일하게 적용해주셔야 합니다. -->
-                    <img class="sns" src="../images/btn-share-cacaotalk.png"/>
-             <!-- 톡 이미지 부분이고, 전 kakaolink_btn_small.png로 불러왔습니다.   -->
-            </a>
+<!--            <a href="javascript:;" id="kakao-link-btn">
+                <img class="sns" src="../images/btn-share-cacaotalk.png"/>
+            </a>-->
+
+            <button type="button" onclick="location.href='javascript:;'" id="kakao-link-btn" style="border: none; background-color: transparent;">
+                <img class="sns" src="../images/btn-share-cacaotalk.png">
+            </button>
 
             <script>
                 // 클립보드로 복사하는 기능을 생성
@@ -195,7 +197,7 @@
                     // 글을 쓸 수 있는 란을 만든다.
                     var aux = document.createElement("input");
                     // 지정된 요소의 값을 할당 한다.
-                    aux.setAttribute("value", "https://localhost:3000/result/1");
+                    aux.setAttribute("value", "http://52.79.218.88:3000");
                     // bdy에 추가한다.
                     document.body.appendChild(aux);
                     // 지정된 내용을 강조한다.
@@ -236,21 +238,15 @@
         description: '내 협업 스타일, 그리고 나랑 일할 때 가장 찰떡인 사람들을 찰떡피플에서 찾아보세요!', // 본문 바로 아래 들어가는 영역?
           imageUrl: '<%= type_medium_img%>',
         link: {
-          mobileWebUrl: 'https://localhost:3000/result/1',
-          webUrl: 'https://localhost:3000/result/1'
+          mobileWebUrl: 'http://52.79.218.88:3000',
+          webUrl: 'http://52.79.218.88:3000'
         }
       },
-/*      social: {*/
-         // 공유하면 소셜 정보도 같이 줄 수 있는데, 이 부분은 기반 서비스마다 적용이 쉬울수도 어려울 수도 있을듯 합니다. 전 연구해보고 안되면 제거할 예정 (망할 google  blogger...)
-/*        likeCount: 286,*/
-/*        commentCount: 45,*/
-/*        sharedCount: 845*/
-/*      },*/
       buttons: [{
-        title: '웹으로 보기',
+        title: '테스트하러 가기',
         link: {
-          mobileWebUrl: 'https://localhost:3000/result/1',
-          webUrl: 'https://localhost:3000/result/1'
+          mobileWebUrl: 'http://52.79.218.88:3000',
+          webUrl: 'http://52.79.218.88:3000'
         }
       }]
     });
