@@ -25,8 +25,13 @@ const user = {
         const query = `SELECT user_idx FROM ${table} where user_name="${user_name}"`;
         try {
             const result = await pool.queryParamArr(query);
-
+            console.log(result[0])
+            if (result[0] !== undefined){
             return result[0];
+            }
+            else{
+                return 0
+            }
 
         } catch (err) {
             console.log('checkUser error: ', err);
