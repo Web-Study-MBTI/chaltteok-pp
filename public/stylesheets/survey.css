@@ -104,7 +104,7 @@ body {
 .rb-tab-active .rb-spot{
   width: 11px;
   height: 11px;
-  background: #b3c7ec;
+  background: darkgrey;
   border-radius:100%;
 }
 
