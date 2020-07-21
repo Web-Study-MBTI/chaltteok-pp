@@ -151,11 +151,11 @@
                             }
                         </script>
 
-                       <% if(matchPP.length > 5) {%>
-                           <button type="button" class="matchBtn" onclick="chaltteok(0, <%= matchPP.length%>)"> <img src="../images/leftBtn.png" width="30px" height="60px"> </button>
-                       <% } else { %>
-                           <button type="button" class="matchBtn"> <img src="../images/leftBtn.png" width="0px" height="0px"> </button>
-                       <% }%>
+                    <% if(matchPP.length > 5) {%>
+                        <button type="button" class="matchBtn" onclick="chaltteok(0, <%= matchPP.length%>)"> <img src="../images/leftBtn.png" width="30px" height="60px"> </button>
+                    <% } else { %>
+                        <button type="button" class="matchBtn"> <img src="../images/leftBtn.png" width="0px" height="0px"> </button>
+                    <% }%>
 
                         <table class ="matchTypeName">
                             <!--나랑 가장 잘 맞는 협업 유형 파트, 이름 -->
@@ -166,11 +166,11 @@
                             <%}%>
                         </table>
 
-                           <% if(matchPP.length > 5) {%>
-                               <button type="button" class="matchBtn" onclick="chaltteok(1, <%= matchPP.length%>)"> <img src="../images/rightBtn.png" width="30px" height="60px"> </button>
-                           <% } else { %>
-                               <button type="button" class="matchBtn"> <img src="../images/rightBtn.png" width="0px" height="0px"> </button>
-                           <% }%>
+                        <% if(matchPP.length > 5) {%>
+                            <button type="button" class="matchBtn" onclick="chaltteok(1, <%= matchPP.length%>)"> <img src="../images/rightBtn.png" width="30px" height="60px"> </button>
+                        <% } else { %>
+                            <button type="button" class="matchBtn"> <img src="../images/rightBtn.png" width="0px" height="0px"> </button>
+                        <% }%>
                     </div>
                 </div>
             </div>
@@ -186,7 +186,7 @@
             <a href="javascript:;" id="kakao-link-btn">
                     <!-- 버튼이 생기는 부분, id는 맘대로 쓰시되 아래 js 코드도 동일하게 적용해주셔야 합니다. -->
                     <img class="sns" src="../images/btn-share-cacaotalk.png"/>
-             <!-- 톡 이미지 부분이고, 전 kakaolink_btn_small.png로 불러왔습니다.   -->
+            <!-- 톡 이미지 부분이고, 전 kakaolink_btn_small.png로 불러왔습니다.   -->
             </a>
 
             <script>
@@ -230,32 +230,32 @@
     // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
     Kakao.Link.createDefaultButton({
       container: '#kakao-link-btn', // 컨테이너는 아까 위에 버튼이 쓰여진 부분 id
-      objectType: 'feed',
+        objectType: 'feed',
       content: { // 여기부터 실제 내용이 들어갑니다.
         title: '찰떡피플 : 협업 유형 테스트', // 본문 제목
         description: '내 협업 스타일, 그리고 나랑 일할 때 가장 찰떡인 사람들을 찰떡피플에서 찾아보세요!', // 본문 바로 아래 들어가는 영역?
-          imageUrl: '<%= type_medium_img%>',
+        imageUrl: '<%= type_medium_img%>',
         link: {
-          mobileWebUrl: 'https://localhost:3000/result/1',
-          webUrl: 'https://localhost:3000/result/1'
+        mobileWebUrl: 'https://localhost:3000/result/1',
+        webUrl: 'https://localhost:3000/result/1'
         }
-      },
+    },
 /*      social: {*/
          // 공유하면 소셜 정보도 같이 줄 수 있는데, 이 부분은 기반 서비스마다 적용이 쉬울수도 어려울 수도 있을듯 합니다. 전 연구해보고 안되면 제거할 예정 (망할 google  blogger...)
 /*        likeCount: 286,*/
 /*        commentCount: 45,*/
 /*        sharedCount: 845*/
 /*      },*/
-      buttons: [{
+    buttons: [{
         title: '웹으로 보기',
         link: {
-          mobileWebUrl: 'https://localhost:3000/result/1',
-          webUrl: 'https://localhost:3000/result/1'
+        mobileWebUrl: 'https://localhost:3000/result/1',
+        webUrl: 'https://localhost:3000/result/1'
         }
-      }]
+    }]
     });
     //]]>
-  </script>
+</script>
 
 
 
