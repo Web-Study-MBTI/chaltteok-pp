@@ -160,4 +160,8 @@ body {
     color: #3673e5;
   }
 
-}
+  @media ( max-width: 321px ) {
+    .intro{
+      font-size: 17px;
+    }
+}}
