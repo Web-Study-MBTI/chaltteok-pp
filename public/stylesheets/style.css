@@ -126,6 +126,39 @@ body {
 }
 
 
+@media ( max-width: 321px ) {
+  .intro{
+    font-size: 18px;
+    display: unset;
+  }
+  .img_main {
+    padding-top: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    min-width: 325px;
+}
+}
+
+/* @media ( max-width: 281px ) { 
+  .intro{
+    font-size: 16px;
+    display: unset;
+  }
+  .img_main {
+    padding-top: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    min-width: 280px;
+}
+} 
+갤럭시 폴드용*/
+
 @media ( min-width: 1024px ) {
 
   .navbar_logo {
@@ -159,5 +192,4 @@ body {
     text-align: left;
     color: #3673e5;
   }
-
 }
