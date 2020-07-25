@@ -127,7 +127,9 @@ body {
 
 
 @media ( min-width: 1024px ) {
-
+  .intro{
+    white-space: nowrap;
+  }
   .navbar_logo {
     width:100%;
     height:100px;
@@ -162,6 +164,18 @@ body {
 
   @media ( max-width: 321px ) {
     .intro{
-      font-size: 17px;
+      font-size: 18px;
+      display: unset;
     }
-}}
+    .img_main {
+      padding-top: 0px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: auto;
+      width: 50%;
+      min-width: 325px;
+  }
+  }
+  
+}
