@@ -18,7 +18,7 @@ answer1 : async (req, res) => {
         return res.status(statusCode.DB_ERROR)
             .send(util.fail(statusCode.DB_ERROR, resMessage.DB_ERROR));
     }
-    return res.redirect('/survey2');
+    res.json({idx:'/survey2'})
 },
 answer2 : async (req, res) => {
     const {user_name,num8,num9,num10,num11,num12,num13,num14} = req.body;
@@ -32,7 +32,7 @@ answer2 : async (req, res) => {
         return res.status(statusCode.DB_ERROR)
             .send(util.fail(statusCode.DB_ERROR, resMessage.DB_ERROR));
     }
-    return res.redirect('/survey3');
+    res.json({idx:'/survey3'})
 },
 answer3 : async (req, res) => {
     const {user_name,num15,num16,num17,num18,num19,num20,num21} = req.body;
@@ -46,7 +46,7 @@ answer3 : async (req, res) => {
         return res.status(statusCode.DB_ERROR)
             .send(util.fail(statusCode.DB_ERROR, resMessage.DB_ERROR));
     }
-    return res.redirect('/survey4');
+    res.json({idx:'/survey4'})
 },
 answer4 : async (req, res) => {
     const {user_name,num22,num23,num24,num25,num26,num27,num28} = req.body;
