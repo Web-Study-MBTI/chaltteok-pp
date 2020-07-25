@@ -49,7 +49,7 @@ if(num7===undefined){
 }
 
  $.ajax({
-      url: "http://52.79.218.88:3000/survey1", // 클라이언트가 요청을 보낼 서버의 URL 주소
+      url: "/survey1", // 클라이언트가 요청을 보낼 서버의 URL 주소
       data: { user_name:user_name, num1:num1, num2:num2, num3:num3, num4:num4, num5:num5, num6:num6, num7:num7 }, // HTTP 요청과 함께 서버로 보낼 데이터
       type: "POST",
       cache	: false,    
@@ -101,7 +101,7 @@ $(".trigger2").click(function () {
    num14=0;
  }
  $.ajax({
-      url: "http://52.79.218.88:3000/survey2", // 클라이언트가 요청을 보낼 서버의 URL 주소
+      url: "/survey2", // 클라이언트가 요청을 보낼 서버의 URL 주소
       data: { user_name:user_name, num8:num8, num9:num9, num10:num10, num11:num11, num12:num12, num13:num13, num14:num14 }, // HTTP 요청과 함께 서버로 보낼 데이터
       type: "POST",
       cache	: false,   
@@ -153,7 +153,7 @@ $(".trigger3").click(function () {
   num21=0;
 }
   $.ajax({
-       url: "http://52.79.218.88:3000/survey3", // 클라이언트가 요청을 보낼 서버의 URL 주소
+       url: "/survey3", // 클라이언트가 요청을 보낼 서버의 URL 주소
        data: { user_name:user_name, num15:num15, num16:num16, num17:num17, num18:num18, num19:num19, num20:num20, num21:num21 }, // HTTP 요청과 함께 서버로 보낼 데이터
        type: "POST",
       cache	: false, 
@@ -205,7 +205,7 @@ $(".trigger4").click(function () {
    num28=0;
  }
   $.ajax({
-       url: "http://52.79.218.88:3000/survey4", // 클라이언트가 요청을 보낼 서버의 URL 주소
+       url: "/survey4", // 클라이언트가 요청을 보낼 서버의 URL 주소
        data: { user_name:user_name, num22:num22, num23:num23, num24:num24, num25:num25, num26:num26, num27:num27, num28:num28 }, // HTTP 요청과 함께 서버로 보낼 데이터
        type: "POST",     
        cache	: false,      
