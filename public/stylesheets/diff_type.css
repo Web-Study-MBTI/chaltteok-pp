@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Cafe24Ohsquare;
+    src: url("../fonts/Cafe24Ohsquare.ttf") format('truetype');
+}
+@font-face {
+    font-family: NotoSans;
+    src:url("../fonts/NotoSansRegular.ttf") format('truetype');
+}
+
 body {
     font-family: NotoSans;
 }
@@ -43,10 +52,6 @@ body {
     color: #3673e5;
   }
 
-@font-face {
-    font-family: NotoSans;
-    src:url("../fonts/NotoSansRegular.ttf") format('truetype');
-}
 .card-box{
     display: flex;
     align-items: center;
@@ -183,7 +188,7 @@ body {
         align-items: center;
         padding-bottom: 10px;
     }
-    
+
     @font-face {
         font-family: NotoSans;
         src:url("../fonts/NotoSansRegular.ttf") format('truetype');

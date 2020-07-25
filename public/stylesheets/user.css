@@ -119,6 +119,7 @@ body {
     text-align: center;
     color: #ffffff;
     margin: auto;
+    border: none;
  }
 
  input::placeholder{
@@ -184,6 +185,7 @@ body {
         letter-spacing: normal;
         text-align: center;
         color: #ffffff;
+        border: none;
      }
      input::placeholder{
         font-family: NotoSans;
@@ -279,6 +281,7 @@ body {
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
+    border: none;
  }
  input::placeholder{
     font-family: NotoSans;
@@ -342,6 +345,7 @@ body {
         letter-spacing: normal;
         text-align: center;
         color: #ffffff;
+        border: none;
      }
      input::placeholder{
         font-family: NotoSans;

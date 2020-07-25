@@ -1,10 +1,40 @@
-html,
+html
+@media ( min-width: 320px ) {
+  @font-face {
+    font-family: Cafe24Ohsquare;
+    src: url("../fonts/Cafe24Ohsquare.ttf") format('truetype');
+  }
+  @font-face {
+    font-family: NotoSans;
+    src: url("../fonts/NotoSansRegular.ttf") format('truetype');
+  }
+
+  body {
+    font-family: NotoSans;
+  }
+  .fontCafe{
+    font-family: Cafe24Ohsquare;
+  }
+}
+
+
+@font-face {
+  font-family: Cafe24Ohsquare;
+  src: url("../fonts/Cafe24Ohsquare.ttf") format('truetype');
+}
+@font-face {
+  font-family: NotoSans;
+  src:url("../fonts/NotoSansRegular.ttf") format('truetype');
+}
 
 body {
   height: 100%;
   font-family: NotoSans;
 }
 
+.fontCafe{
+  font-family: Cafe24Ohsquare;
+}
 
 .img_main {
   padding-top: 100px;
@@ -128,8 +158,19 @@ body {
 
 
 @media ( min-width: 1024px ) {
+  @font-face {
+    font-family: Cafe24Ohsquare;
+    src: url("../fonts/Cafe24Ohsquare.ttf") format('truetype');
+  }
+  @font-face {
+    font-family: NotoSans;
+    src:url("../fonts/NotoSansRegular.ttf") format('truetype');
+  }
   .intro{
     white-space: nowrap;
+  }
+  .fontCafe{
+    font-family: Cafe24Ohsquare;
   }
   .navbar_logo {
     width:100%;
@@ -164,8 +205,20 @@ body {
   }
 
   @media ( max-width: 321px ) {
+    @font-face {
+      font-family: Cafe24Ohsquare;
+      src: url("../fonts/Cafe24Ohsquare.ttf") format('truetype');
+    }
+    @font-face {
+      font-family: NotoSans;
+      src:url("../fonts/NotoSansRegular.ttf") format('truetype');
+    }
+    .fontCafe{
+      font-family: Cafe24Ohsquare;
+    }
     .intro{
       font-size: 18px;
+      font-family: Cafe24Ohsquare;
       display: unset;
     }
     .img_main {

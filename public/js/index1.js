@@ -51,7 +51,9 @@ if(num7===undefined){
  $.ajax({
       url: "/survey1", // 클라이언트가 요청을 보낼 서버의 URL 주소
       data: { user_name:user_name, num1:num1, num2:num2, num3:num3, num4:num4, num5:num5, num6:num6, num7:num7 }, // HTTP 요청과 함께 서버로 보낼 데이터
-      type: "POST",                             // HTTP 요청 방식(GET, POST)
+      type: "POST",
+      cache	: false,    
+      headers: { "cache-control": "no-cache" },                   // HTTP 요청 방식(GET, POST)
       dataType: "json"                         // 서버에서 보내줄 데이터의 타입
   })
   // HTTP 요청이 성공하면 요청한 데이터가 done() 메소드로 전달됨.
@@ -101,7 +103,9 @@ $(".trigger2").click(function () {
  $.ajax({
       url: "/survey2", // 클라이언트가 요청을 보낼 서버의 URL 주소
       data: { user_name:user_name, num8:num8, num9:num9, num10:num10, num11:num11, num12:num12, num13:num13, num14:num14 }, // HTTP 요청과 함께 서버로 보낼 데이터
-      type: "POST",                             // HTTP 요청 방식(GET, POST)
+      type: "POST",
+      cache	: false,   
+      headers: { "cache-control": "no-cache"},                             // HTTP 요청 방식(GET, POST)
       dataType: "json"                         // 서버에서 보내줄 데이터의 타입
   })
   // HTTP 요청이 성공하면 요청한 데이터가 done() 메소드로 전달됨.
@@ -151,7 +155,9 @@ $(".trigger3").click(function () {
   $.ajax({
        url: "/survey3", // 클라이언트가 요청을 보낼 서버의 URL 주소
        data: { user_name:user_name, num15:num15, num16:num16, num17:num17, num18:num18, num19:num19, num20:num20, num21:num21 }, // HTTP 요청과 함께 서버로 보낼 데이터
-       type: "POST",                             // HTTP 요청 방식(GET, POST)
+       type: "POST",
+      cache	: false, 
+       headers: { "cache-control": "no-cache"},                           // HTTP 요청 방식(GET, POST)
        dataType: "json"                         // 서버에서 보내줄 데이터의 타입
    })
    // HTTP 요청이 성공하면 요청한 데이터가 done() 메소드로 전달됨.
@@ -201,12 +207,15 @@ $(".trigger4").click(function () {
   $.ajax({
        url: "/survey4", // 클라이언트가 요청을 보낼 서버의 URL 주소
        data: { user_name:user_name, num22:num22, num23:num23, num24:num24, num25:num25, num26:num26, num27:num27, num28:num28 }, // HTTP 요청과 함께 서버로 보낼 데이터
-       type: "POST",                             // HTTP 요청 방식(GET, POST)
+       type: "POST",     
+       cache	: false,      
+       headers: { "cache-control": "no-cache"},            
+             // HTTP 요청 방식(GET, POST)
        dataType: "json"                         // 서버에서 보내줄 데이터의 타입
    })
    // HTTP 요청이 성공하면 요청한 데이터가 done() 메소드로 전달됨.
    .done(function(json) {
-     location.href= `http://chaltteok-pp.cf/result/${json.idx}`
+     location.href= `../result/${json.idx}`
    })
    // HTTP 요청이 실패하면 오류와 상태에 관한 정보가 fail() 메소드로 전달됨.
    .fail(function(xhr, status, errorThrown) {

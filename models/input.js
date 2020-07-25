@@ -57,8 +57,7 @@ const input = {
 
         try {
             const result = await pool.queryParamArr(query,values);
-            //여기에 유형별로 t에 맞춘 -f+t해서 합산 알고리즘 구해가지고 t>0이면 t로 t<0이면 f로
-            //t=0이면..? 제발 그렇게 안됐으면 좋겠다,,,,, 0점은 최대한 눌러주지 마세여~!~!!
+        
             const f=`SELECT num1,num9,num17,num25 FROM ${table} WHERE user_idx="${user_idx}"`;
             const fresult = await pool.queryParamArr(f);
             const fscore=(fresult[0]['num1']+fresult[0]['num9']+fresult[0]['num17']+fresult[0]['num25']);

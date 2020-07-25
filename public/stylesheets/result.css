@@ -1,4 +1,13 @@
 @media ( min-width: 320px ) {
+    @font-face {
+        font-family: Cafe24Ohsquare;
+        src: url("../fonts/Cafe24Ohsquare.ttf") format('truetype');
+    }
+    @font-face {
+        font-family: NotoSans;
+        src:url("../fonts/NotoSansRegular.ttf") format('truetype');
+    }
+
     body {
         font-family: NotoSans;
     }
@@ -71,15 +80,6 @@
         color: #000000;
     }
 
-    @font-face {
-        font-family: Cafe24Ohsquare;
-        src: url("../fonts/Cafe24Ohsquare.ttf") format('truetype');
-    }
-    @font-face {
-        font-family: NotoSans;
-        src:url("../fonts/NotoSansRegular.ttf") format('truetype');
-    }
-
     .keyword{
         padding: 0px 5px 0px 5px;
         width: auto;
@@ -88,7 +88,7 @@
         border: solid 2px #3673e5;
         background-color: #f5f4f4;
         font-family: NotoSans;
-        font-size: 9px;
+        font-size: 8px;
         font-weight: 600;
         font-stretch: normal;
         font-style: normal;
@@ -315,10 +315,41 @@
 }
 
 
+@media (max-width: 321px){
+    .keyword{
+        padding: 0px 5px 0px 5px;
+        width: auto;
+        height: 23px;
+        border-radius: 4px;
+        border: solid 2px #3673e5;
+        background-color: #f5f4f4;
+        font-family: NotoSans;
+        font-size: 7px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+
+        display: flex;
+        align-items: center;
+    }
+}
 
 
 
 @media ( min-width: 1024px ) {
+    @font-face {
+        font-family: Cafe24Ohsquare;
+        src: url("../fonts/Cafe24Ohsquare.ttf") format('truetype');
+    }
+    @font-face {
+        font-family: NotoSans;
+        src:url("../fonts/NotoSansRegular.ttf") format('truetype');
+    }
+
     body {
         font-family: NotoSans;
     }
@@ -390,16 +421,6 @@
         letter-spacing: normal;
         text-align: left;
         color: #000000;
-    }
-
-    @font-face {
-        font-family: Cafe24Ohsquare;
-        src:url("../fonts/Cafe24Ohsquare.ttf") format('truetype');
-    }
-
-    @font-face {
-        font-family: NotoSans;
-        src:url("../fonts/NotoSansRegular.ttf") format('truetype');
     }
 
     .keyword{
