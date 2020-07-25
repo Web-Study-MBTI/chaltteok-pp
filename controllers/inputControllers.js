@@ -18,6 +18,7 @@ answer1 : async (req, res) => {
         return res.status(statusCode.DB_ERROR)
             .send(util.fail(statusCode.DB_ERROR, resMessage.DB_ERROR));
     }
+    console.log("인풋엔서1에서 "+ res.json({idx:'/survey2'}))
     res.json({idx:'/survey2'})
 },
 answer2 : async (req, res) => {

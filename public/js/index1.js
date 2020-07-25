@@ -58,7 +58,7 @@ if(num7===undefined){
   })
    // HTTP 요청이 성공하면 요청한 데이터가 done() 메소드로 전달됨.
    .done(function(json) {
-    location.href= `../${json.idx}`
+    location.href= `/${json.idx}`
     console.log(location.href);
   })
   // HTTP 요청이 실패하면 오류와 상태에 관한 정보가 fail() 메소드로 전달됨.
@@ -111,7 +111,7 @@ $(".trigger2").click(function () {
   })
    // HTTP 요청이 성공하면 요청한 데이터가 done() 메소드로 전달됨.
    .done(function(json) {
-    location.href= `../${json.idx}`
+    location.href= `/${json.idx}`
   })
   // HTTP 요청이 실패하면 오류와 상태에 관한 정보가 fail() 메소드로 전달됨.
   .fail(function(xhr, status, errorThrown) {
@@ -163,7 +163,7 @@ $(".trigger3").click(function () {
    })
    // HTTP 요청이 성공하면 요청한 데이터가 done() 메소드로 전달됨.
    .done(function(json) {
-    location.href= `../${json.idx}`
+    location.href= `/${json.idx}`
   })
    // HTTP 요청이 실패하면 오류와 상태에 관한 정보가 fail() 메소드로 전달됨.
    .fail(function(xhr, status, errorThrown) {
