@@ -115,6 +115,7 @@
     text-align: center;
     color: #ffffff;
     margin: auto;
+    border:none;
  }
 
  input::placeholder{
@@ -180,6 +181,7 @@
         letter-spacing: normal;
         text-align: center;
         color: #ffffff;
+        border:none;
      }
      input::placeholder{
         font-family: NotoSans;
@@ -231,7 +233,7 @@
     .login{
         width: 80%;
         margin: auto;
-        padding: 15%;
+        padding: 0 15%;
         height: 598px;
 
         text-align: center;
@@ -275,6 +277,7 @@
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
+    border:none;
  }
  input::placeholder{
     font-family: NotoSans;
@@ -338,6 +341,7 @@
         letter-spacing: normal;
         text-align: center;
         color: #ffffff;
+        border:none;
      }
      input::placeholder{
         font-family: NotoSans;
