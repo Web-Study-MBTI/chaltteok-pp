@@ -12,6 +12,7 @@ answer1 : async (req, res) => {
     var user_idx = await User.checkUser(user_name);
     user_idx = user_idx.user_idx;
     console.log(user_idx);
+    console.log(num1,num2,num3,num4,num5,num6,num7);
     const idx = await Input.answer1(user_idx,num1,num2,num3,num4,num5,num6,num7);
     if (idx === -1) {
         return res.status(statusCode.DB_ERROR)
@@ -25,6 +26,7 @@ answer2 : async (req, res) => {
     var user_idx = await User.checkUser(user_name);
     user_idx = user_idx.user_idx;
     console.log(user_idx);
+    console.log(num8,num9,num10,num11,num12,num13,num14)
     const idx = await Input.answer2(user_idx,num8,num9,num10,num11,num12,num13,num14);
     if (idx === -1) {
         return res.status(statusCode.DB_ERROR)
@@ -38,6 +40,7 @@ answer3 : async (req, res) => {
     var user_idx = await User.checkUser(user_name);
     user_idx = user_idx.user_idx;
     console.log(user_idx);
+    console.log(num15,num16,num17,num18,num19,num20,num21);
     const idx = await Input.answer3(user_idx,num15,num16,num17,num18,num19,num20,num21);
     if (idx === -1) {
         return res.status(statusCode.DB_ERROR)
@@ -51,7 +54,7 @@ answer4 : async (req, res) => {
     var user_idx = await User.checkUser(user_name);
     user_idx = user_idx.user_idx;
     console.log(user_idx);
-
+    console.log(num22,num23,num24,num25,num26,num27,num28);
     const idx = await Input.answer4(user_idx,num22,num23,num24,num25,num26,num27,num28);
     if (idx === -1) {
         return res.status(statusCode.DB_ERROR)
