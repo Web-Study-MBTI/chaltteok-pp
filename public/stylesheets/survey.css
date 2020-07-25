@@ -36,7 +36,7 @@
   color: #3673e5;
 }
 body {
-    font-family: sans-serif;
+    font-family: NotoSans;
   }
   
 .h{
@@ -246,7 +246,7 @@ body {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: NotoSans;
   }
   
 
@@ -476,7 +476,7 @@ body {
   src:url("../fonts/NotoSansRegular.ttf") format('truetype');
 }
 body {
-    font-family: sans-serif;
+    font-family: NotoSans;
   }
   
 
@@ -737,7 +737,7 @@ body {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: NotoSans;
   }
   
 .h{

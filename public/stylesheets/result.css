@@ -1,6 +1,6 @@
 @media ( min-width: 320px ) {
     body {
-        font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+        font-family: NotoSans;
     }
     .navbar_logo {
         width:100%;
@@ -309,8 +309,8 @@
 
 
 @media ( min-width: 768px ) {
-    body{
-        background: blue;
+    body {
+        font-family: NotoSans;
     }
 }
 
@@ -320,7 +320,7 @@
 
 @media ( min-width: 1024px ) {
     body {
-        font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+        font-family: NotoSans;
     }
 
     .navbar_logo {
