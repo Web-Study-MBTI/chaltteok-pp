@@ -50,7 +50,7 @@ const input = {
             throw err;
         }
     },
-    answer4 : async(user_idx,num22,num23,num24,num25,num26,num27,num28,type) => {
+    answer4 : async(user_idx,num22,num23,num24,num25,num26,num27,num28) => {
         const fields = 'num22=?,num23=?,num24=?,num25=?,num26=?,num27=?,num28=?';
         const query = `UPDATE ${table} SET ${fields} WHERE user_idx="${user_idx}"`;
         const values = [num22,num23,num24,num25,num26,num27,num28];
