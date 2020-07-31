@@ -21,8 +21,7 @@ answer1 : async (req, res) => {
 answer2 : async (req, res) => {
     const {user_name,num8,num9,num10,num11,num12,num13,num14} = req.body;
     console.log(user_name);
-    var user_idx = await User.checkUser(user_name);
-    user_idx = user_idx.user_idx;
+    const user_idx = await User.checkUser(user_name);
     console.log(user_idx);
     console.log(num8,num9,num10,num11,num12,num13,num14)
     const idx = await Input.answer2(user_idx,num8,num9,num10,num11,num12,num13,num14);
