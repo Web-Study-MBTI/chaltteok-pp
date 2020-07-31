@@ -6,9 +6,6 @@ $(".rb-tab").click(function () {
   $(this).addClass("rb-tab-active");
 });
 
-
-//버튼 비활성화 시켜주고 싶은데 ,, 설문조사 개수에 따라?! 7개 미만으로 체크하면 버튼 비활성화
-
 const user_name=localStorage.getItem('result');
 //Save data:
 $(".trigger").click(function () {
@@ -20,11 +17,6 @@ $(".trigger").click(function () {
  var num6=$("#rb-6").find(".rb-tab-active").attr("data-value");
  var num7=$("#rb-7").find(".rb-tab-active").attr("data-value");
 
-//  if ($(".rb-tab").data.length != 7){
-//   $('.trigger').prop('disabled', true);
-// } else {
-//   $('.trigger').prop('disabled', false);
-// } 
 
  if(num1===undefined){
    num1=0;
@@ -58,8 +50,8 @@ if(num7===undefined){
   })
    // HTTP 요청이 성공하면 요청한 데이터가 done() 메소드로 전달됨.
    .done(function(json) {
-    location.href= `/${json.idx}`
-    console.log(location.href);
+    // location.href= `http://52.79.86.164:3000/survey2`
+    // console.log(location.href);
   })
   // HTTP 요청이 실패하면 오류와 상태에 관한 정보가 fail() 메소드로 전달됨.
   .fail(function(xhr, status, errorThrown) {
@@ -111,7 +103,6 @@ $(".trigger2").click(function () {
   })
    // HTTP 요청이 성공하면 요청한 데이터가 done() 메소드로 전달됨.
    .done(function(json) {
-    location.href= `/${json.idx}`
   })
   // HTTP 요청이 실패하면 오류와 상태에 관한 정보가 fail() 메소드로 전달됨.
   .fail(function(xhr, status, errorThrown) {
@@ -163,7 +154,6 @@ $(".trigger3").click(function () {
    })
    // HTTP 요청이 성공하면 요청한 데이터가 done() 메소드로 전달됨.
    .done(function(json) {
-    location.href= `/${json.idx}`
   })
    // HTTP 요청이 실패하면 오류와 상태에 관한 정보가 fail() 메소드로 전달됨.
    .fail(function(xhr, status, errorThrown) {
