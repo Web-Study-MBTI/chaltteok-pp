@@ -7,7 +7,7 @@ $(".loginbtn").click(function () {
     localStorage.setItem('result',user_name);
     console.log(localStorage.getItem('result'));
  $.ajax({
-      url: "/survey1", // 클라이언트가 요청을 보낼 서버의 URL 주소
+      url: "http://52.79.86.164:3000/user", // 클라이언트가 요청을 보낼 서버의 URL 주소
       data: { user_name:user_name}, // HTTP 요청과 함께 서버로 보낼 데이터
       type: "POST",                             // HTTP 요청 방식(GET, POST)
       dataType: "json"                         // 서버에서 보내줄 데이터의 타입
