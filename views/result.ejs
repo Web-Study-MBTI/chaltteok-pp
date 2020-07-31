@@ -3,11 +3,7 @@
 
 <head>
     <link rel='stylesheet' href='/stylesheets/result.css' />
-    <link rel='shortcut icon' href='#'>
-    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="apple-touch-icon-120x120-precomposed" href="/apple-touch-icon-120x120-precomposed.png">
-    <link rel="apple-touch-icon-120x120" href="/apple-touch-icon-120x120.png">
+
     <meta charset="utf-8">
     <!-- 모바일 우선 -->
     <meta name="viewport"
@@ -171,11 +167,11 @@
                             <%}%>
                         </table>
 
-                           <% if(matchPP.length > 5) {%>
-                               <button type="button" class="matchBtn" onclick="chaltteok(1, <%= matchPP.length%>)"> <img src="../images/rightBtn.png" width="30px" height="60px"> </button>
-                           <% } else { %>
-                               <button type="button" class="matchBtn"> <img src="../images/rightBtn.png" width="0px" height="0px"> </button>
-                           <% }%>
+                        <% if(matchPP.length > 5) {%>
+                            <button type="button" class="matchBtn" onclick="chaltteok(1, <%= matchPP.length%>)"> <img src="../images/rightBtn.png" width="30px" height="60px"> </button>
+                        <% } else { %>
+                            <button type="button" class="matchBtn"> <img src="../images/rightBtn.png" width="0px" height="0px"> </button>
+                        <% }%>
                     </div>
                 </div>
             </div>
@@ -241,19 +237,19 @@
       content: { // 여기부터 실제 내용이 들어갑니다.
         title: '찰떡피플 : 협업 유형 테스트', // 본문 제목
         description: '내 협업 스타일, 그리고 나랑 일할 때 가장 찰떡인 사람들을 찰떡피플에서 찾아보세요!', // 본문 바로 아래 들어가는 영역?
-          imageUrl: '<%= type_medium_img%>',
+        imageUrl: '<%= type_medium_img%>',
         link: {
-          mobileWebUrl: 'http://chaltteok-pp.cf',
-          webUrl: 'http://chaltteok-pp.cf'
+        mobileWebUrl: 'http://chaltteok-pp.cf',
+        webUrl: 'http://chaltteok-pp.cf'
         }
-      },
-      buttons: [{
+    },
+    buttons: [{
         title: '테스트하러 가기',
         link: {
-          mobileWebUrl: 'http://chaltteok-pp.cf',
-          webUrl: 'http://chaltteok-pp.cf'
+        mobileWebUrl: 'http://chaltteok-pp.cf',
+        webUrl: 'http://chaltteok-pp.cf'
         }
-      }]
+    }]
     });
     //]]>
   </script>

@@ -223,6 +223,7 @@ body {
     align-items: center;
 }
 .submit{
+  cursor: pointer;
   justify-content: space-around;
   align-items: center;
   color: seashell;
@@ -455,6 +456,7 @@ body {
     align-items: center;
 }
 .submit{
+  cursor: pointer;
     justify-content: space-around;
     align-items: center;
     color: seashell;
@@ -714,6 +716,7 @@ body {
     align-items: center;
 }
 .submit{
+  cursor: pointer;
     justify-content: space-around;
     align-items: center;
     color: seashell;
@@ -946,6 +949,7 @@ body {
     align-items: center;
 }
 .submit{
+  cursor: pointer;
     justify-content: space-around;
     align-items: center;
     color: seashell;
