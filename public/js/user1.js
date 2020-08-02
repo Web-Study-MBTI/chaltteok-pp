@@ -1,5 +1,4 @@
 var myStorage = window.localStorage;
-//Switcher function:
 
 //Save data:
 $(".loginbtn").click(function () {
