@@ -17,7 +17,6 @@ $(".trigger").click(function () {
  var num6=$("#rb-6").find(".rb-tab-active").attr("data-value");
  var num7=$("#rb-7").find(".rb-tab-active").attr("data-value");
 
-
  if(num1===undefined){
    num1=0;
  }
@@ -41,7 +40,7 @@ if(num7===undefined){
 }
 
  $.ajax({
-      url: "http://52.79.86.164:3000/survey1", // 클라이언트가 요청을 보낼 서버의 URL 주소
+      url: "/survey1", // 클라이언트가 요청을 보낼 서버의 URL 주소
       data: { user_name:user_name, num1:num1, num2:num2, num3:num3, num4:num4, num5:num5, num6:num6, num7:num7 }, // HTTP 요청과 함께 서버로 보낼 데이터
       type: "POST",
       cache	: false,    
@@ -50,8 +49,7 @@ if(num7===undefined){
   })
    // HTTP 요청이 성공하면 요청한 데이터가 done() 메소드로 전달됨.
    .done(function(json) {
-    // location.href= `http://52.79.86.164:3000/survey2`
-    // console.log(location.href);
+    location.href= `../${json.url}`
   })
   // HTTP 요청이 실패하면 오류와 상태에 관한 정보가 fail() 메소드로 전달됨.
   .fail(function(xhr, status, errorThrown) {
@@ -94,7 +92,7 @@ $(".trigger2").click(function () {
    num14=0;
  }
  $.ajax({
-      url: "http://52.79.86.164:3000/survey2", // 클라이언트가 요청을 보낼 서버의 URL 주소
+      url: "/survey2", // 클라이언트가 요청을 보낼 서버의 URL 주소
       data: { user_name:user_name, num8:num8, num9:num9, num10:num10, num11:num11, num12:num12, num13:num13, num14:num14 }, // HTTP 요청과 함께 서버로 보낼 데이터
       type: "POST",
       cache	: false,   
@@ -103,6 +101,7 @@ $(".trigger2").click(function () {
   })
    // HTTP 요청이 성공하면 요청한 데이터가 done() 메소드로 전달됨.
    .done(function(json) {
+    location.href= `../${json.url2}`
   })
   // HTTP 요청이 실패하면 오류와 상태에 관한 정보가 fail() 메소드로 전달됨.
   .fail(function(xhr, status, errorThrown) {
@@ -145,7 +144,7 @@ $(".trigger3").click(function () {
   num21=0;
 }
   $.ajax({
-       url: "http://52.79.86.164:3000/survey3", // 클라이언트가 요청을 보낼 서버의 URL 주소
+       url: "/survey3", // 클라이언트가 요청을 보낼 서버의 URL 주소
        data: { user_name:user_name, num15:num15, num16:num16, num17:num17, num18:num18, num19:num19, num20:num20, num21:num21 }, // HTTP 요청과 함께 서버로 보낼 데이터
        type: "POST",
       cache	: false, 
@@ -154,6 +153,7 @@ $(".trigger3").click(function () {
    })
    // HTTP 요청이 성공하면 요청한 데이터가 done() 메소드로 전달됨.
    .done(function(json) {
+    location.href= `../${json.url3}`
   })
    // HTTP 요청이 실패하면 오류와 상태에 관한 정보가 fail() 메소드로 전달됨.
    .fail(function(xhr, status, errorThrown) {
