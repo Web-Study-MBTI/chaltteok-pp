@@ -22,14 +22,16 @@ const user = {
         }
     },
     checkUser : async (user_name) => {
-        const query = `SELECT user_idx FROM ${table} where user_name="${user_name}"`;
+        const query = `SELECT * FROM ${table} where user_name="${user_name}"`;
         try {
             const result = await pool.queryParamArr(query);
-            if (result[0].user_idx !== undefined){
-            return result[0].user_idx;
-            }
-            else{
+            console.log("resultlength:"+result.length)
+            if (result.length==0 ){
                 return 0
+            }
+            if (result[0].user_idx !== undefined){
+                console.log("result[0].user_idx"+result[0].user_idx)
+            return result[0].user_idx;
             }
 
         } catch (err) {
