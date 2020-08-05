@@ -14,7 +14,7 @@ signup : async (req, res) => {
     if (!user_name || !user_part) {
         // res.status(statusCode.BAD_REQUEST)
         //     .send(util.fail(statusCode.BAD_REQUEST, resMessage.NULL_VALUE));
-        res.send('<script type="text/javascript">alert("파트(직업) 또는 닉네임을 입력해주세요.");location.href="./user";</script>');
+        res.send('<script type="text/javascript">alert("파트(직업) 또는 닉네임을 입력해주세요.");history.back();</script>');
         return;
     }
     //already ID
