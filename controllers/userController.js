@@ -20,7 +20,7 @@ signup : async (req, res) => {
     //already ID
     const idx1 = await User.checkUser(user_name);
     if (idx1 > 0) {
-        res.send('<script type="text/javascript">alert("이미 존재하는 닉네임입니다.");location.href="./user";</script>');
+        res.send('<script type="text/javascript">alert("이미 존재하는 닉네임입니다.");history.back();</script>');
         return;
     } 
     if (idx1 == 0) {
